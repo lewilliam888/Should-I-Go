@@ -125,7 +125,7 @@ if response.status_code == 200:
 
     # Creates pipeline
     df = pd.DataFrame(weather_list)
-    if os.path.exists("../data/weather_data.csv"):
+    if os.path.exists(csv_path):
         df.to_csv(csv_path, mode='a', header=False, index=False)
     else:
         df.to_csv(csv_path, mode='w', header=True, index=False)
