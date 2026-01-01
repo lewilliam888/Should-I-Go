@@ -1,0 +1,6 @@
+weather_data.csv
+data/
+__pycache__/
+.env
+.DS_Store
+.Rhistory
